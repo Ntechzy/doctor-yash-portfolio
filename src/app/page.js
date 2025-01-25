@@ -2,14 +2,16 @@
 import BMICalculator from '@/components/BMICalculator'
 import FAQ from '@/components/FAQ'
 import Reviews from '@/components/Reviews'
-import React from 'react'
+import ProfileCard from '@/components/ui/ProfileCard'
+import Specialization from '@/components/ui/Specialization'
 
 const page = () => {
   return (
     <div>
       <BMICalculator/>
       <FAQ/>
-      <Reviews/>
+      <Reviews/>      <Specialization />
+      <ProfileCard />
     </div>
   )
 }
