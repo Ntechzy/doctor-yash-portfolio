@@ -8,9 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#6ec1e4",
-        secondary: "#54595f",
-        head_primary: "#16ab98"
+          primary: "#6ec1e4",
+        primary_dark: "#1b78b6",
+        secondary: "#6d7a8c",
+        head_primary: "#16ab98",
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
