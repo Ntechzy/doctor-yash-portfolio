@@ -16,19 +16,25 @@ const ProfileCard = () => {
                         className="w-full h-full rounded-lg"
                     />
                     <div className="absolute -top-10 rounded-full right-1/2 transform translate-x-1/2 md:right-24 w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-[#f6f6f6]" />
-                    <div className="absolute -top-16 rounded-full right-1/2 transform translate-x-1/2 md:right-[25px] w-[120px] h-[120px] md:w-[180px] md:h-[180px]">
+
+                    <div className="absolute -top-16 rounded-full right-1/2 transform translate-x-1/2 md:right-[25px] w-[120px] h-[120px] md:w-[180px] md:h-[180px] ">
                         {text.split("").map((char, i) => (
                             <span
                                 key={i}
-                                className="absolute top-16 transform origin-center text-black text-[10px] md:text-[12px] font-bold"
+                                className="absolute top-16 mx-2 gap-4 transform origin-center text-black text-[10px] md:text-[12px] font-bold"
                                 style={{
-                                    transform: `rotate(${i * (360 / text.length)}deg) translate(50px) rotate(-${i * (360 / text.length)}deg)`,
+                                    transform: `rotate(${i * (360 / (text.length + 2))}deg) translate(70px) rotate(-${i * (360 / (text.length + 2))}deg)`,
+                                    animation: `char-spin 5s linear infinite`,
+                                    animationDelay: `${i * 0.1}s`,
                                 }}
                             >
                                 {char}
                             </span>
                         ))}
                     </div>
+
+
+
                 </div>
             </div>
 
