@@ -5,7 +5,7 @@ const Specialization = () => {
     return (
         <div className="flex flex-col items-center m-auto px-4 sm:px-8 lg:px-16 mb-[150px] mt-[50px] ">
             <div className="mb-10">
-                <h1 className="text-2xl sm:text-3xl shadow-lg shadow-gray-200 py-[20px] px-[40px]  font-bold text-head_primary lg:text-[50px] leading-[54px] text-center">
+                <h1 className="text-2xl sm:text-3xl rounded-lg shadow-lg shadow-gray-200 py-[20px] px-[40px]  font-bold text-head_primary lg:text-[50px] leading-[54px] text-center">
                     DR. ARUN BHARDWAJ
                 </h1>
                 <h3 className="text-2xl sm:text-3xl py-[20px] px-[40px]  font-bold text-primary_dark  lg:text-[50px] leading-[54px] text-center">
@@ -33,7 +33,7 @@ const Specialization = () => {
                         </div>
 
 
-                        <div className="text-gray-600 text-sm sm:text-base">
+                        <div className="text-primary_dark text-sm sm:text-base">
                             {data.content}
                         </div>
                     </div>

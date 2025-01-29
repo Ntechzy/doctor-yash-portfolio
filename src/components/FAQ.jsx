@@ -32,7 +32,7 @@ const FAQ = () => {
         {faqData.map((faq, index) => (
           <li key={index} className="border border-gray-300 rounded-lg overflow-hidden shadow-md">
             <button
-              className={`w-full text-left px-4 py-5  hover:bg-primary_dark hover:text-white font-medium  flex justify-between items-center ${activeIndex === index ? "bg-primary_dark text-white" : "text-blue-800"} text-xl font-bold`}
+              className={`w-full text-left px-4 py-5  hover:bg-primary_dark hover:text-white font-medium  flex justify-between items-center ${activeIndex === index ? "bg-primary_dark text-white" : "text-primary_dark"} text-xl font-bold`}
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}

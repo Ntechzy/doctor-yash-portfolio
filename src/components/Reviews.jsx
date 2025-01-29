@@ -35,7 +35,7 @@ const Reviews = () => {
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
       setIsAnimating(false);
-    }, 500); 
+    }, 500);
   };
 
   const prevReview = () => {
@@ -46,15 +46,15 @@ const Reviews = () => {
         (prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length
       );
       setIsAnimating(false);
-    }, 500); 
+    }, 500);
   };
 
   return (
-    <div className=" px-6 py-[82px] bg-gradient-to-r from-teal-200 to-blue-800 rounded-lg shadow-lg flex flex-col md:flex-row gap-10 items-center space-x-8 ">
+    <div className="px-6 py-[82px] bg-gradient-to-r from-teal-200 to-blue-800 rounded-lg shadow-lg flex flex-col md:flex-row gap-10 items-center space-x-8">
       {/* Left Section */}
       <div className="text-center flex-1">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png" 
+          src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png"
           alt="Google Reviews"
           className="w-16 mx-auto"
         />
@@ -71,48 +71,53 @@ const Reviews = () => {
       </div>
 
       {/* Right Section */}
-      <div className="relative flex-1">
-        <div className="bg-blue-900 text-white p-6 rounded-lg shadow-lg  relative overflow-hidden">
-            {/* Slider Container */}
-            <div className="flex transition-transform duration-500 ease-in-out"
-                style={{
-                transform: `translateX(-${currentIndex * 100}%)`,
-                }}>
+      <div className="relative flex-1 w-full max-w-lg ">
+        <div className="bg-blue-900 text-white p-6   rounded-lg shadow-lg relative overflow-hidden">
+          {/* Slider Container */}
+          <div
+            className="flex transition-transform duration-500 gap-6 ease-in-out"
+            style={{
+              transform: `translateX(-${currentIndex * 100}%)`,
+            }}
+          >
             {reviews.map((review, index) => (
-                <div
-                key={index}
-                className="min-w-full flex flex-col space-y-4 items-start"
-                >
+              <div key={index} className="min-w-full flex flex-col space-y-4 items-start">
                 <div className="flex items-center space-x-4">
-                    <img
+                  <img
                     src={review.image}
                     alt={review.name}
                     className="w-12 h-12 rounded-full border-2 border-white"
-                    />
-                    <div>
+                  />
+                  <div>
                     <h3 className="text-xl font-semibold text-teal-300">
-                        {review.name}
+                      {review.name}
                     </h3>
                     <div className="text-yellow-400">
-                        {"★".repeat(review.rating)}{" "}
-                        {"☆".repeat(5 - review.rating)}
+                      {"★".repeat(review.rating)}{" "}
+                      {"☆".repeat(5 - review.rating)}
                     </div>
-                    </div>
+                  </div>
                 </div>
-                <p className="text-gray-300">{review.review}</p>
-                </div>
+                <p className="text-gray-300 md:px-7  m-auto">{review.review}</p>
+              </div>
             ))}
-            </div>
-
+          </div>
         </div>
+
         {/* Navigation Buttons */}
-        <div className="absolute bottom-[-44px] left-14 transform -translate-x-1/2 flex space-x-4">
-            <div className="p-1 bg-white rounded-full w-10 h-10 flex justify-center items-center ">
-                <FaArrowLeft onClick={prevReview} className="flex items-center justify-center  cursor-pointer size-5" />
-            </div>
-            <div className="p-1 bg-white rounded-full w-10 h-10 flex justify-center items-center ">
-                <FaArrowRight onClick={nextReview} className="flex items-center justify-center  cursor-pointer size-5" />
-            </div>
+        <div className="absolute bottom-[-44px] left-1/2 transform -translate-x-1/2 flex space-x-4">
+          <div className="p-1 bg-white rounded-full w-10 h-10 flex justify-center items-center">
+            <FaArrowLeft
+              onClick={prevReview}
+              className="cursor-pointer text-blue-800"
+            />
+          </div>
+          <div className="p-1 bg-white rounded-full w-10 h-10 flex justify-center items-center">
+            <FaArrowRight
+              onClick={nextReview}
+              className="cursor-pointer text-blue-800"
+            />
+          </div>
         </div>
       </div>
     </div>

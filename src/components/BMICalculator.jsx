@@ -27,14 +27,14 @@ export default function BMICalculator() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col  justify-center bg-gray-100 px-9 w-full">
+    <div className="min-h-screen flex flex-col justify-center bg-gray-100 px-4 sm:px-8 lg:px-16 w-full">
       <Heading title="BMI Calculator" />
-      <div className="flex flex-col md:flex-row gap-8 items-start">
+      <div className="flex flex-col lg:flex-row gap-8 items-center">
         {/* BMI Form */}
-        <div className="bg-white shadow-lg rounded-lg p-8 w-full ">
+        <div className="bg-white shadow-lg rounded-lg p-6 w-full sm:w-11/12 lg:w-1/2">
           <h2 className="text-2xl font-bold text-primary_dark mb-6 text-center">
             Calculate Your BMI
-            </h2>
+          </h2>
           <div className="mb-4">
             <input
               type="number"
@@ -99,24 +99,24 @@ export default function BMICalculator() {
         </div>
 
         {/* BMI Info */}
-        <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+        <div className="bg-white shadow-lg rounded-lg p-6 w-full sm:w-11/12 lg:w-1/3">
           <h2 className="text-2xl font-bold text-primary_dark mb-6">
             WHAT DOES YOUR BMI TELL YOU?
           </h2>
           <ul className="space-y-4">
-            <li className="flex items-center justify-between border-b pb-2 p-9">
+            <li className="flex items-center justify-between border-b pb-2 p-4 sm:p-6">
               <span className="font-medium">01. BMI &lt; 18.5</span>
               <span className="text-gray-500">Underweight</span>
             </li>
-            <li className="flex items-center justify-between border-b pb-2 p-9">
+            <li className="flex items-center justify-between border-b pb-2 p-4 sm:p-6">
               <span className="font-medium">02. 18.5 - 23.5</span>
               <span className="text-gray-500">Normal</span>
             </li>
-            <li className="flex items-center justify-between border-b pb-2 p-9">
+            <li className="flex items-center justify-between border-b pb-2 p-4 sm:p-6">
               <span className="font-medium">03. 23.6 - 27.5</span>
               <span className="text-gray-500">Overweight</span>
             </li>
-            <li className="flex items-center justify-between p-9">
+            <li className="flex items-center justify-between p-4 sm:p-6">
               <span className="font-medium">04. BMI &gt; 27.5</span>
               <span className="text-gray-500">Obese</span>
             </li>

@@ -9,9 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#6ec1e4",
-        primary_dark: "#1b78b6",
-        secondary: "#6d7a8c",
+        // primary: "#6ec1e4",
+        primary: "#FFD700",
+        // primary_dark: "#1b78b6",
+        primary_dark: " #008080",
+        // secondary: "#6d7a8c",
+        // secondary: "#80C904",
         head_primary: "#16ab98",
       },
       animation: {
