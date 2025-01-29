@@ -31,7 +31,7 @@ const Navbar = () => {
                 <img className="h-full w-[80px]" src="next.svg" alt="Logo" />
                 <div className="text-lg text-primary_dark font-semibold">
                     Yash
-                    <br />
+                    
                     Pandey
                 </div>
             </div>
