@@ -4,12 +4,12 @@ const Carousel = () => {
     const slides = [
         {
             id: 1,
-            image: "https://via.placeholder.com/1920x1080?text=Slide+1",
-            caption: "I Yash Pandey Welcome You In My Place  ",
+            image: "/assets/banner.jpg",
+            // caption: "I Yash Pandey Welcome You In My Place  ",
         },
         {
             id: 2,
-            image: "https://via.placeholder.com/1920x1080?text=Slide+2",
+            image: "/assets/image.png",
             caption: "Your Health, My Priority",
         },
         {
@@ -45,7 +45,7 @@ const Carousel = () => {
             {slides.map((slide, index) => (
                 <div
                     key={slide.id}
-                    className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${index === currentIndex ? "translate-x-0" : "-translate-x-full"
+                    className={`absolute inset-0 transition-transform duration-1000  ease-in-out ${index === currentIndex ? "translate-x-0" : "-translate-x-full"
                         } ${index === currentIndex - 1 ? "translate-x-full" : ""}`}
                     style={{
                         backgroundImage: `url(${slide.image})`,

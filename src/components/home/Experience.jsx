@@ -11,10 +11,10 @@ const Experience = () => {
                     <div>
                         <img className='rounded-lg' src="/assets/hospital.jpg" alt="" />
                     </div>
-                    <div>
+                    <div className=''>
                         <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark'>Currently Available At</h2>
                         <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark'>Max Super speciality Hospital, Sector-10, Dwarka</h2>
-                        <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark'>& BLK MAX hospital, Pusa road, Rajendra Place, New Delhi</h2>
+                        <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark pb-4'>& BLK MAX hospital, Pusa road, Rajendra Place, New Delhi</h2>
                     </div>
 
                 </div>
