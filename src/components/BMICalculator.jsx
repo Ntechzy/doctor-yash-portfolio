@@ -153,16 +153,22 @@ export default function BMICalculator() {
                     className={`transform transition-all ${
                       isOpen === index ? "rotate-180" : ""
                     }`}
-                    style={{ transition: "transform 0.3s ease" }}
+                    style={{ transition: "transform 0.5s ease" }}
                   >
                     &#8628; {/* Down Arrow */}
                   </span>
                 </div>
-                {isOpen === index && (
-                  <div className="py-3 px-4 text-sm text-gray-700">
-                    {item.answer}
-                  </div>
-                )}
+                <div
+                  className={`overflow-hidden transition-all duration-500 ${
+                    isOpen === index ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  {isOpen === index && (
+                    <div className="py-3 px-4 text-sm text-gray-700">
+                      {item.answer}
+                    </div>
+                  )}
+                </div>
               </li>
             ))}
           </ul>

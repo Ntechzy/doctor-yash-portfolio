@@ -6,7 +6,7 @@ const Specialization = () => {
         <div className="flex flex-col items-center m-auto px-4 sm:px-8 lg:px-16 md:mb-[150px]  mt-[50px] ">
             <div className="mb-10">
                 <h1 className="md:text-2xl text-xl sm:text-3xl rounded-lg shadow-md shadow-gray-200 md:py-[20px] md:px-[40px]  font-bold text-head_primary lg:text-[50px] leading-[54px] text-center">
-                    DR. ARUN BHARDWAJ
+                    DR. Yash Pandey
                 </h1>
                 <h3 className="text-2xl sm:text-3xl py-5 md:py-[20px] px-[40px] text-[32px]  font-bold text-primary_dark  lg:text-[50px] leading-[54px] text-center">
                     SPECIALIZATION

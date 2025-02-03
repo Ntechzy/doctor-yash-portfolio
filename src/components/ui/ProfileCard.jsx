@@ -57,7 +57,7 @@ const ProfileCard = () => {
                         Pusa Road Rajendra Place, New Delhi.
                     </p>
                     <p className="pt-3 md:pt-5 text-[14px] sm:text-[15px] md:text-[16px]">
-                        Dr. Arun Bhardwaj is a highly skilled Advanced Laparoscopic and
+                        Dr. Yash Pandey is a highly skilled Advanced Laparoscopic and
                         Bariatric Surgeon based in Delhi/NCR. He specializes in minimally
                         invasive surgical procedures (basic and advanced), Gastrointestinal
                         Surgery, and Bariatric Surgery.

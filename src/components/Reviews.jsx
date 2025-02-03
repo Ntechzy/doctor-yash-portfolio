@@ -7,7 +7,7 @@ const reviews = [
     image: "https://placehold.co/50X50/EEE/31343C", 
     rating: 5,
     review:
-      "My father is a CPR survivor and had a complication in the intestine which required a surgery. It was a risky operation. Dr Arun gave us the advise & a lot of confidence to go thru the surgery. Following his...",
+      "My father is a CPR survivor and had a complication in the intestine which required a surgery. It was a risky operation. Dr Yash gave us the advise & a lot of confidence to go thru the surgery. Following his...",
   },
   {
     name: "John Doe",

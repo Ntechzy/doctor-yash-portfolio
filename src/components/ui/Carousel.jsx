@@ -4,19 +4,19 @@ const Carousel = () => {
     const slides = [
         {
             id: 1,
-            image: "/assets/banner.jpg",
+            image: "/assets/1.png",
             // caption: "I Yash Pandey Welcome You In My Place  ",
         },
         {
             id: 2,
-            image: "/assets/image.png",
-            caption: "Your Health, My Priority",
+            image: "/assets/2.png",
+            // caption: "Your Health, My Priority",
         },
-        {
-            id: 3,
-            image: "https://via.placeholder.com/1920x1080?text=Slide+3",
-            caption: "Modern Facilities for Modern Needs",
-        },
+        // {
+        //     id: 3,
+        //     image: "https://via.placeholder.com/1920x1080?text=Slide+3",
+        //     caption: "Modern Facilities for Modern Needs",
+        // },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
