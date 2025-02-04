@@ -1,25 +1,35 @@
 'use client'
-import BMICalculator from '@/components/BMICalculator'
-import FAQ from '@/components/FAQ'
-import Reviews from '@/components/Reviews'
-import ProfileCard from '@/components/ui/ProfileCard'
-import Specialization from '@/components/home/Specialization'
-import Experience from '@/components/home/Experience'
-import Footer from '@/components/ui/Footer'
-import Navbar from '@/components/ui/Navbar'
-import Carousel from '@/components/ui/Carousel'
+
+import BMICalculator from "@/components/home/BMICalculator"
+import Experience from "@/components/home/Experience"
+import FAQ from "@/components/home/FAQ"
+import OurNumber from "@/components/home/OurNumbers"
+import Patient from "@/components/home/Patient"
+import Reviews from "@/components/home/Reviews"
+import Specialization from "@/components/home/Specialization"
+import Carousel from "@/components/ui/Carousel"
+import Cta from "@/components/ui/Cta"
+import Footer from "@/components/ui/Footer"
+import Navbar from "@/components/ui/Navbar"
+import ProfileCard from "@/components/ui/ProfileCard"
+import Testimonials from "@/components/ui/Testimonials"
+
 
 const page = () => {
   return (
     <div>
       <Navbar />
       <Carousel />
+      <ProfileCard />
+      <OurNumber />
+      <Patient />
       <Specialization />
       <Experience />
-      <ProfileCard />
+      <Cta />
       <BMICalculator />
       <FAQ />
-      <Reviews />
+      <Testimonials />
+      {/* <Reviews /> */}
       <Footer />
     </div>
   )

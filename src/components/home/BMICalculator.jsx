@@ -65,7 +65,7 @@ export default function BMICalculator() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col justify-center bg-gray-100 px-4 sm:px-8 lg:px-16 w-full">
+    <div className="min-h-screen flex flex-col justify-center bg-gray-50 px-4 sm:px-8 lg:px-16 w-full">
       <Heading title="BMI Calculator" />
       <div className="flex flex-col lg:flex-row gap-8 items-center">
         {/* BMI Form */}

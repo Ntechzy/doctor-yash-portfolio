@@ -26,7 +26,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className=" p-6 bg-gray-50 rounded-lg shadow-lg">
+    <div className="md:px-20 p-6 bg-gray-50 rounded-lg shadow-lg">
       <Heading title="Frequent asked questions" />
       <ul className="space-y-4">
         {faqData.map((faq, index) => (
@@ -36,12 +36,11 @@ const FAQ = () => {
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}
-              {activeIndex===index ? <FaEye/>:<FaEyeSlash/>}
+              {activeIndex === index ? <FaEye /> : <FaEyeSlash />}
             </button>
             <div
-              className={`transition-[max-height] duration-500 ease-in-out overflow-hidden bg-primary_dark text-white ${
-                activeIndex === index ? "max-h-40" : "max-h-0"
-              }`}
+              className={`transition-[max-height] duration-500 ease-in-out overflow-hidden bg-primary_dark text-white ${activeIndex === index ? "max-h-40" : "max-h-0"
+                }`}
             >
               <div className="px-4 py-3 ">{faq.answer}</div>
             </div>

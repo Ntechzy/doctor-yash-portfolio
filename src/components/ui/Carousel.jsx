@@ -31,13 +31,12 @@ const Carousel = () => {
     );
   };
 
-  // Auto-slide functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 5000); // Change slide every 5 seconds
-    return () => clearInterval(interval); // Cleanup on component unmount
-  }, []);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 5000);
+        return () => clearInterval(interval); 
+    }, []);
 
   return (
     <div className="md:mt-[45px] mt-[60px] relative w-full h-[250px] md:h-screen overflow-hidden">
