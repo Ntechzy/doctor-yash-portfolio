@@ -7,6 +7,7 @@ import OurNumber from "@/components/home/OurNumbers"
 import Patient from "@/components/home/Patient"
 import Reviews from "@/components/home/Reviews"
 import Specialization from "@/components/home/Specialization"
+import SucessStories from "@/components/home/SucessStories"
 import Carousel from "@/components/ui/Carousel"
 import Cta from "@/components/ui/Cta"
 import Footer from "@/components/ui/Footer"
@@ -23,8 +24,9 @@ const page = () => {
       <ProfileCard />
       <OurNumber />
       <Patient />
-      <Specialization />
       <Experience />
+      <Specialization />
+      <SucessStories />
       <Cta />
       <BMICalculator />
       <FAQ />
