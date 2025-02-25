@@ -19,8 +19,10 @@ import Testimonials from "@/components/ui/Testimonials"
 const page = () => {
   return (
     <div>
+
       <Navbar />
       <Carousel />
+     
       <ProfileCard />
       <OurNumber />
       <Patient />

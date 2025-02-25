@@ -30,15 +30,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 flex justify-between items-center px-4 lg:px-24 text-lg w-full p-2 transition-all ease-in z-[999] bg-white`}
+      className={`fixed top-0 left-0 flex justify-between items-center px-4 lg:px-24 mb-10 text-lg w-full p-2 transition-all ease-in z-[999] bg-white`}
       style={{ color: isScrolled ? "#000" : "var(--primary-color)" }}
     >
       {/* Logo */}
       <div className="h-[50px] flex items-center gap-4">
         <img className="h-full w-[80px]" src="next.svg" alt="Logo" />
-        <div className="text-lg text-primary_dark font-semibold">
+        <div className="md:text-3xl text-xl text-primary_dark font-semibold">
           Yash
-          <br />
+         
           Pandey
         </div>
       </div>
