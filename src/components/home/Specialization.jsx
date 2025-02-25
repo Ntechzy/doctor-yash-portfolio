@@ -3,7 +3,7 @@ import React from 'react';
 
 const Specialization = () => {
     return (
-        <div className="flex flex-col items-center m-auto px-4 sm:px-8 lg:px-16 md:mb-[150px]  mt-[50px] ">
+        <section id='service' className="flex flex-col items-center m-auto px-4 sm:px-8 lg:px-16 md:mb-[150px]  mt-[50px]  ">
             <div className="mb-10">
                 <h1 className="md:text-2xl text-xl sm:text-3xl rounded-lg shadow-md shadow-gray-200 md:py-[20px] md:px-[40px]  font-bold text-head_primary lg:text-[50px] leading-[54px] text-center">
                     DR. Yash Pandey
@@ -39,7 +39,7 @@ const Specialization = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

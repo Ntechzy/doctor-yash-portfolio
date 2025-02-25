@@ -5,7 +5,7 @@ const ProfileCard = () => {
     const text = " DR. Yash Pandey * * DR. Yash Pandey";
 
     return (
-        <div className="flex flex-col-reverse md:flex-row mt-10 justify-between px-4 sm:px-10 lg:px-10 gap-10 mb-5 rounded-sm">
+        <section id="about" className="flex flex-col-reverse md:flex-row mt-10 justify-between px-4 sm:px-10 lg:px-10 gap-10 mb-5 rounded-sm">
 
             <div className="w-full md:w-[45%] h-auto flex items-end justify-center">
                 <div className=" h-[92%]  md:w-full">
@@ -48,7 +48,7 @@ const ProfileCard = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

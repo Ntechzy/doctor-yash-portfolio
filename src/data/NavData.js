@@ -1,7 +1,7 @@
 export const navData = [
     {
         name: 'Home',
-        link: '/'
+        link: '#home'
     },
     {
         name: 'About',
@@ -9,7 +9,7 @@ export const navData = [
     },
     {
         name: 'Service',
-        link: '/services'
+        link: '/service'
     },
     {
         name: 'Contact',

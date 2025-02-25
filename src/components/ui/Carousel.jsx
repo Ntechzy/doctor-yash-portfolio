@@ -5,21 +5,15 @@ const Carousel = () => {
     {
       id: 1,
       image: "/assets/1.png",
-      // caption: "I Yash Pandey Welcome You In My Place  ",
     },
     {
       id: 2,
       image: "/assets/2.png",
-      // caption: "Your Health, My Priority",
     },
-    // {
-    //     id: 3,
-    //     image: "https://via.placeholder.com/1920x1080?text=Slide+3",
-    //     caption: "Modern Facilities for Modern Needs",
-    // },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
@@ -31,34 +25,42 @@ const Carousel = () => {
     );
   };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            nextSlide();
-        }, 5000);
-        return () => clearInterval(interval); 
-    }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="md:mt-[45px] mt-[60px] relative w-full h-[250px] md:h-screen overflow-hidden">
+    <section id="home"
+      className="md:mt-[45px] mt-[60px] relative w-full h-[250px] md:h-screen overflow-hidden"
+      onMouseEnter={() => setIsHovered(true)} // Set hover state to true
+      onMouseLeave={() => setIsHovered(false)} // Set hover state to false
+    >
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-transform duration-700 bg-no-repeat bg-contain md:bg-cover  ease-in-out ${
+          className={`absolute inset-0 transition-transform duration-700 bg-no-repeat bg-contain md:bg-cover ease-in-out ${
             index === currentIndex ? "translate-x-0" : "-translate-x-full"
           } ${index === currentIndex - 1 ? "translate-x-full" : ""}`}
           style={{
             backgroundImage: `url(${slide.image})`,
-            // backgroundSize: "cover",
-            backgroundPosition: "left",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            transition: "transform 0.7s ease-in-out",
           }}
         >
-            <img src={slide.image} className="w-full h-full" alt="" />
-          {/* <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h2 className="text-white text-4xl lg:text-6xl font-bold drop-shadow-md text-center">
-              {slide.caption}
-            </h2>
-          </div> */}
+          <div
+            className={`absolute inset-0 transition-all duration-500 ${
+              isHovered ? "bg-gray-600 opacity-50" : "opacity-0"
+            }`} // Apply gray overlay when hovered
+            style={{
+              transform: isHovered ? "scaleY(1)" : "scaleY(0)", // This will create the 'gate opening' effect
+              transformOrigin: "center",
+            }}
+          />
         </div>
       ))}
 
@@ -88,7 +90,7 @@ const Carousel = () => {
           ></div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
