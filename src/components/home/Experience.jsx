@@ -25,14 +25,13 @@ const Experience = () => {
                             Senior Consultant
                         </h1>
                         <h2 className='text-[21px] font-semibold leading-[44px]'>
-                            2024 - Present
+                            2018 - Present
                         </h2>
                         <p>
-                            Max institute of GI, Bariatric, Laparoscopic and Robotic Surgery.
+                        Laparoscopic Bariatric & Metabolic Surgery from Center of Excellence for minimal access surgery Mumbai in 2018.
                         </p>
-                        <p className=' text-[18px] font-[600] mt-12 pb-4'>
-                            Max Super speciality Hospital, Sector-10, Dwarka
-                            & BLK MAX hospital, Pusa road Rajendra Place, New Delhi
+                        <p className=' text-[18px] font-[600] mt-8 pb-4'>
+                        SAS Hospital , Harahua , Varanasi UttarPradesh & Priya Hospital , Sigra , Varanasi UttarPradesh
                         </p>
                     </div>
                     <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1'>
