@@ -13,8 +13,8 @@ const Experience = () => {
                     </div>
                     <div className=''>
                         <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark'>Currently Available At</h2>
-                        <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark'>Max Super speciality Hospital, Sector-10, Dwarka</h2>
-                        <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark pb-4'>& BLK MAX hospital, Pusa road, Rajendra Place, New Delhi</h2>
+                        <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark'>SAS Hospital , Harahua , Varanasi & Priya Hospital , Sigra , Varanasi </h2>
+                        <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark pb-4'> </h2>
                     </div>
 
                 </div>

@@ -4,18 +4,18 @@ export const patientcare = [
     {
         title: "Laboratory Services",
         icon: <FaFlask />, // Flask icon for lab services
-        description: "Saepe nulla praesentium eaque omnis perferendis a doloremque."
+        description: "World’s fastest surgeon awarded by University of Oxford , UK on 2nd Oct. 2024."
     },
     {
         title: "Heart Disease",
         icon: <FaHeart />, // Heart icon for heart-related care
-        description: "Saepe nulla praesentium eaque omnis perferendis a doloremque."
+        description: "Fellowship in Bariatric (Metabolic) surgery at GEM Hospital, Coimbatore in 2018."
     },
 
     {
         title: "Body Surgery",
         icon: <FaSyringe />, // Syringe icon for surgery
-        description: "Saepe nulla praesentium eaque omnis perferendis a doloremque."
+        description: "Fellowship in minimal access surgery at world association of Laparoscopic Surgeons in 2019."
     },
 
 ];

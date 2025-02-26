@@ -3,6 +3,7 @@
 import BMICalculator from "@/components/home/BMICalculator"
 import Experience from "@/components/home/Experience"
 import FAQ from "@/components/home/FAQ"
+import InstagramPosts from "@/components/home/InstagramPost"
 import OurNumber from "@/components/home/OurNumbers"
 import Patient from "@/components/home/Patient"
 import Reviews from "@/components/home/Reviews"
@@ -29,11 +30,12 @@ const page = () => {
       <Experience />
       <Specialization />
       <SucessStories />
+      <InstagramPosts/>
       <Cta />
-      <BMICalculator />
       <FAQ />
       <Testimonials />
       {/* <Reviews /> */}
+      <BMICalculator />
       <Footer />
     </div>
   )

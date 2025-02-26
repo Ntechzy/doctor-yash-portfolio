@@ -2,10 +2,10 @@ import React from 'react'
 
 const OurNumber = () => {
     const stats = [
-        { value: "58", symbol: "k", label: "Happy People" },
-        { value: "700", symbol: "+", label: "Surgery Completed" },
-        { value: "4", symbol: "+", label: "Year of Experience" },
-        { value: "20", symbol: "", label: "Worldwide Branch" },
+        { value: "3", symbol: " K+", label: "Happy People" },
+        { value: "1.5", symbol: " K+", label: "Surgery Completed" },
+        { value: "4", symbol: " +", label: "Year of Experience" },
+        // { value: "20", symbol: "", label: "Worldwide Branch" },
     ];
 
     return (
@@ -19,7 +19,7 @@ const OurNumber = () => {
                         <div>
 
                             <span className="text-4xl md:text-[70px] text-white font-bold">{stat.value}</span>
-                            <span className='text-xl md:text-base'>{stat.symbol}</span>
+                            <span className='text-xl md:text-3xl'>{stat.symbol}</span>
                         </div>
                         <span className="text-sm md:text-base mt-2">{stat.label}</span>
                     </div>
