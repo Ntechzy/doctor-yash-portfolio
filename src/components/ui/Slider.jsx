@@ -25,7 +25,7 @@ const Slider = ({ interval = 5000 }) => {
 
                 {SuccessStories.map((slide, index) => (
                     <div
-                        key={slide.id}
+                        key={index}
                         className={
                             `absolute group md:border-4 border-secondary w-full md:w-[50%] h-full transition-all duration-500 ease-in-out bg-cover bg-center delay-200 `}
                         style={{ backgroundImage: `url(${slide.image})`, transform: `translateX(${(index - currentSlide) * 100}%)`, objectFit: "cover" }}

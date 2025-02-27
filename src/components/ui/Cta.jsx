@@ -2,8 +2,8 @@ import React from 'react'
 
 const Cta = () => {
     return (
-        <div className='bg-[#16ab9725] my-20 pt-[80px] pb-[80px] mb-5 flex md:flex-row flex-col justify-between px-20  gap-8'>
-            <h2 className=' text-3xl font-bold text-'>
+        <div className='bg-[#16ab9725] my-8 md:my-32 md:pt-[80px] md:pb-[80px] mb-5 flex md:flex-row flex-col items-center  md:justify-between md:px-20 md:gap-8 p-6'>
+            <h2 className=' md:text-3xl font-bold text-'>
                 Request an Appointment
             </h2>
             <div>

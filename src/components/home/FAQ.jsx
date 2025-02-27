@@ -26,7 +26,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="md:px-20 p-6 bg-gray-50 rounded-lg shadow-lg">
+    <div className="md:px-20 p-6 bg-gray-50 rounded-lg shadow-lg md:my-[100px] my-8">
       <Heading title="Frequent asked questions" />
       <ul className="space-y-4">
         {faqData.map((faq, index) => (

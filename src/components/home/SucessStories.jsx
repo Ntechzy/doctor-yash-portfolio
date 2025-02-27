@@ -32,18 +32,19 @@ const SucessStories = () => {
         };
     }, []);
     return (
-        <div className='flex md:flex-row flex-col justify-around m-auto px-[15px]' >
+        <div className='flex md:flex-row flex-col justify-around m-auto px-[15px] my-[80px]' >
             <div className='w-full md:w-[41.6%]  '>
                 <div className=' '>
                     <div className='mb-[40px]'>
                         <div className='flex items-center gap-4'>
                             <h1 className='text-[10px] md:text-[12px] font-bold uppercase mb-[20px] text-primary_dark '>
-                                Our Services
+                                Success Stories
                             </h1>
-                            <img className=' mb-[20px]' src="/props/divider.png" alt="" />
+                            <img className='mb-[20px]' src="/props/divider.png" alt="" />
                         </div>
+
                         <h1 className='text-[24px] md:text-[42px] font-[700] text-primary_dark leading-[1.25em]'>
-                            Collaboration and Innovation. Together, we turn ideas into reality.
+                            Dedication and Expertise. Transforming lives through medical excellence.
                         </h1>
                     </div>
 

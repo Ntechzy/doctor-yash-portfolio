@@ -29,7 +29,7 @@ const Testimonials = () => {
 
 
     return (
-        <div className='bg-shade py-[100px]'>
+        <div className='bg-shade pb-[100px]'>
 
             <div
                 className="w-full relative md:px-20 m-auto"

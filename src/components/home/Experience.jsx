@@ -4,7 +4,7 @@ import { ExperienceData } from '@/data/ExperienceData'
 
 const Experience = () => {
     return (
-        <div className='md:my-[50px] mt-20'>
+        <div className='md:my-[100px] mt-16'>
             <div className='flex md:flex-row flex-col justify-between md:mx-8 gap-8'>
 
                 <div className='md:w-[50%] flex flex-col gap-4 shadow-lg px-2 rounded-lg'>

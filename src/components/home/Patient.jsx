@@ -4,10 +4,13 @@ import { patientcare } from '@/data/PatientCare';
 
 const Patient = () => {
     return (
-        <div className='bg-[#16ab9725] pt-[100px] md:pt-[180px] pb-[10px] md:pb-[100px] mb-5 flex flex-col  gap-8'>
-            <Heading
-                title={"Award winning patient care"} />
+        <div className='bg-[#16ab9725] pt-[100px] md:pt-[180px] py-[20px] md:pb-[100px] mb-5 flex flex-col  gap-8'>
+            <div className='my-8 md:my-3'>
 
+                <Heading
+                    title={"Award winning patient care"} />
+
+            </div>
             <div className='grid md:p-0 px-[10px]  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:max-w-[1350px] md:max-w-[720px] w-full m-auto gap-7 text-[16px] '>
                 {
                     patientcare.map((pro, i) => (

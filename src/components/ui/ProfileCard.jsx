@@ -7,7 +7,7 @@ const ProfileCard = () => {
   return (
     <section
       id="about"
-      className="flex flex-col-reverse md:flex-row mt-10 justify-between px-4 sm:px-10 lg:px-10 gap-10 mb-5 rounded-sm"
+      className="flex flex-col-reverse md:flex-row mt-10 justify-between px-4 sm:px-10 lg:px-10 gap-10 rounded-sm"
     >
       <div className="w-full md:w-[45%] h-auto flex items-end justify-center">
         <div className=" h-[92%]  md:w-full">
