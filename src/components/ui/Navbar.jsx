@@ -36,7 +36,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="h-[50px] flex items-center gap-4">
         <img className="h-full w-[80px]" src="next.svg" alt="Logo" />
-        <div className="md:text-3xl text-xl text-primary_dark font-semibold">
+        <div className="md:text-3xl text-xlc text-primary_dark font-semibold">
           Yash
          
           Pandey

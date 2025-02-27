@@ -1,5 +1,6 @@
 'use client'
 
+import AppoinmentForm from "@/components/home/AppointmentForm"
 import BMICalculator from "@/components/home/BMICalculator"
 import Experience from "@/components/home/Experience"
 import FAQ from "@/components/home/FAQ"
@@ -35,6 +36,7 @@ const page = () => {
       <InstagramPosts/>
       <Cta />
       <FAQ />
+      <AppoinmentForm />
       <Testimonials />
       {/* <Reviews /> */}
       <BMICalculator />
