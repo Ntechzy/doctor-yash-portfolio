@@ -30,9 +30,9 @@ const page = () => {
       <Patient />
       <Experience />
       <Specialization />
+      <Features/>
       <SucessStories />
       <InstagramPosts/>
-      <Features/>
       <Cta />
       <FAQ />
       <Testimonials />

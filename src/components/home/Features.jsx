@@ -22,8 +22,8 @@ const responsive = {
 
 const Features = () => {
   return (
-    <div className="text-white font-bold flex flex-row bg-[#016263] my-10 shadow-lg">
-      <p className="md:-rotate-90 hidden md:flex  md:w-6 md:h-10   items-center  md:mt-[9.5rem] md:ml-9 md:justify-center bg-[#01616381] shadow-xl md:text-center md:text-[48px] text-shadow-lg">
+    <div className="text-white font-bold flex flex-row bg-primary_dark  my-10 shadow-lg">
+      <p className="md:-rotate-90 hidden md:flex  md:w-6 md:h-10   items-center  md:mt-[9.4rem] md:ml-9 md:justify-center bg-[#01616381] shadow-xl md:text-center md:text-[45px] text-shadow-lg">
         <p className="-pb-2 p-2 shadow-lg -mb-2">ACHIEVEMENT</p>
       </p>
       <div className="w-[90%] m-auto">

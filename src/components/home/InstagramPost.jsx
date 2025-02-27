@@ -43,7 +43,7 @@ const InstagramPosts = () => {
 
   // Main username and profile details
   const mainUsername = "Dr. Yash Pandey"; // Change this to your desired username
-  const followers = 15000; // Example follower count
+  const followers = "1.5K"; // Example follower count
   const following = 120; // Example following count
 
   return (
