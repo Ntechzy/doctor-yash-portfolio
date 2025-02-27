@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const InstagramPosts = () => {
@@ -58,13 +59,13 @@ const InstagramPosts = () => {
             className="w-14 h-14 rounded-full mx-auto"
           />
           <div className='flex flex-col'>
-          <h2 className="text-lg font-md text-primary_dark mb-2 ">{mainUsername}</h2>
-          <h2 className="text-sm font-md text-primary_dark mb-2 text-start">yash_adsg</h2>
+            <h2 className="text-lg font-md text-primary_dark mb-2 ">{mainUsername}</h2>
+            <h2 className="text-sm font-md text-primary_dark mb-2 text-start">yash_adsg</h2>
           </div>
 
         </div>
         {/* Username */}
-       
+
         {/* Followers and Following */}
         <div className="flex justify-center gap-8 text-sm text-gray-600">
           <div className="flex flex-col items-center">
@@ -81,8 +82,8 @@ const InstagramPosts = () => {
       {/* Display the posts in a grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {postData.map((post) => (
-          <div key={post.id} className="relative max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
-            
+          <Link href="https://www.instagram.com/dr.yash_pandey/" target='_blank' key={post.id} className="relative max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+
             <div className="relative group">
               <img
                 src={post.mediaUrl}
@@ -91,7 +92,7 @@ const InstagramPosts = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <div className="text-center">
-                  <p>{post.likes} Likes</p>
+                  <h1>{post.likes} Likes</h1>
                   <p>{post.comments} Comments</p>
                 </div>
               </div>
@@ -99,7 +100,7 @@ const InstagramPosts = () => {
             <div className="p-4">
               <p>{post.caption}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
