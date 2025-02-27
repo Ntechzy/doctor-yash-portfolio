@@ -49,15 +49,18 @@ const InstagramPosts = () => {
   return (
     <div className="container mx-auto p-4">
       {/* Profile Section */}
-      <div className="text-center mb-8 flex flex-row justify-between mt-2">
+      <div className="text-center shadow-lg border-t-2 items-center  flex flex-row justify-between ">
         {/* Profile Picture */}
         <div className="mb-4 flex flex-row gap-3 ">
           <img
             src="/assets/s1.jpg" // Main profile picture for the username
             alt="Profile"
-            className="w-10 h-10 rounded-full mx-auto"
+            className="w-14 h-14 rounded-full mx-auto"
           />
-           <h2 className="text-xl font-md text-primary_dark mb-2">{mainUsername}</h2>
+          <div className='flex flex-col'>
+          <h2 className="text-lg font-md text-primary_dark mb-2 ">{mainUsername}</h2>
+          <h2 className="text-sm font-md text-primary_dark mb-2 text-start">yash_adsg</h2>
+          </div>
 
         </div>
         {/* Username */}

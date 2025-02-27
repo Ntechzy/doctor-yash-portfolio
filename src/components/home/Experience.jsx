@@ -9,7 +9,7 @@ const Experience = () => {
 
                 <div className='md:w-[50%] flex flex-col gap-4 shadow-lg px-2 rounded-lg'>
                     <div>
-                        <img className='rounded-lg' src="/assets/hospital.jpg" alt="" />
+                        <img className='rounded-lg' src="/assets/hospital-banner.png" alt="" />
                     </div>
                     <div className=''>
                         <h2 className='md:text-[20px] font-[400] leading-[30px] text-primary_dark'>Currently Available At</h2>

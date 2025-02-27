@@ -17,3 +17,10 @@
 body {
   font-family: var(--font-poppins), sans-serif;
 }
+/* .carouselItem{
+  padding-right: "40px";
+  gap: 20px;
+}   */
+/* .slick-slider>div{
+  border: 1px solid;
+} */

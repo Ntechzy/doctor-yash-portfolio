@@ -3,6 +3,7 @@
 import BMICalculator from "@/components/home/BMICalculator"
 import Experience from "@/components/home/Experience"
 import FAQ from "@/components/home/FAQ"
+import Features from "@/components/home/Features"
 import InstagramPosts from "@/components/home/InstagramPost"
 import OurNumber from "@/components/home/OurNumbers"
 import Patient from "@/components/home/Patient"
@@ -31,6 +32,7 @@ const page = () => {
       <Specialization />
       <SucessStories />
       <InstagramPosts/>
+      <Features/>
       <Cta />
       <FAQ />
       <Testimonials />
