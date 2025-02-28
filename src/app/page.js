@@ -25,7 +25,6 @@ const page = () => {
 
       <Navbar />
       <Carousel />
-     
       <ProfileCard />
       <OurNumber />
       <Patient />

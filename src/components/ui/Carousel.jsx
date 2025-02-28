@@ -35,38 +35,30 @@ const Carousel = () => {
   return (
     <section
       id="home"
-      className="md:mt-[45px] mt-[60px] relative w-full h-[250px] md:h-screen overflow-hidden"
-      onMouseEnter={() => setIsHovered(true)} // Set hover state to true
-      onMouseLeave={() => setIsHovered(false)} // Set hover state to false
+      className="md:mt-[45px] mt-[60px] relative w-full h-[200px] md:h-screen overflow-hidden"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-transform duration-700 bg-no-repeat bg-contain md:bg-cover ease-in-out  ${
-            index === currentIndex ? "translate-x-0" : "-translate-x-full"
-          } ${index === currentIndex - 1 ? "translate-x-full" : ""}`}
-          // style={{
-          //   // backgroundImage: `url(${slide.image})`,
-          //   // backgroundColor:"#356566",
-          //   backgroundPosition: "center center",
-          //   backgroundSize: "stretch",
-          //   transition: "transform 0.7s ease-in-out",
-          
-          
-          // }}
+          className={`absolute inset-0 overflow-hidden transition-transform duration-700 bg-no-repeat bg-contain md:bg-cover ease-in-out w-full h-full ${index === currentIndex ? "translate-x-0" : "-translate-x-full"
+            } ${index === currentIndex - 1 ? "translate-x-full" : ""}`}
         >
           <div
-            className={`absolute inset-0 transition-all duration-1000 ${
-              isHovered ? "bg-gray-600 opacity-50" : "opacity-0"
-            }`} 
+            className={`absolute inset-0 transition-all duration-500 ${isHovered ? "bg-gray-600 opacity-50" : "opacity-0"
+              }`}
             style={{
-              transform: isHovered ? "scaleY(1)" : "scaleY(0)", 
+              transform: isHovered ? "scaleY(1)" : "scaleY(0)",
               transformOrigin: "center",
-
             }}
           />
-          <img src={slide.image} alt="Loading..." className=""/>
+          <img
+            src={slide.image}
+            alt="Loading..."
+            className="w-full h-full object-cover"
+          />
         </div>
       ))}
 
@@ -90,9 +82,8 @@ const Carousel = () => {
           <div
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-4 h-4 rounded-full cursor-pointer ${
-              currentIndex === index ? "bg-white" : "bg-gray-300 hover:bg-white"
-            }`}
+            className={`w-4 h-4 rounded-full cursor-pointer ${currentIndex === index ? "bg-white" : "bg-gray-300 hover:bg-white"
+              }`}
           ></div>
         ))}
       </div>

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const InstagramPosts = () => {
-  // Static post data (directly in the component)
+  
   const postData = [
     {
       id: "1",
@@ -11,7 +11,7 @@ const InstagramPosts = () => {
       mediaUrl: "/assets/s1.jpg",
       likes: 2000,
       comments: 150,
-      caption: "Having a great day at the beach!"
+      caption: "Minimally invasive, maximum ....."
     },
     {
       id: "2",
@@ -20,7 +20,7 @@ const InstagramPosts = () => {
       mediaUrl: "/assets/s3.jpg",
       likes: 2500,
       comments: 180,
-      caption: "Exploring the city today!"
+      caption: "Make physical activity a part of ....."
     },
     {
       id: "3",
@@ -29,7 +29,7 @@ const InstagramPosts = () => {
       mediaUrl: "/assets/s2.jpg",
       likes: 1800,
       comments: 120,
-      caption: "Chasing sunsets 🌅"
+      caption: "Minimally invasive, maximum ....."
     },
     {
       id: "4",
@@ -38,14 +38,14 @@ const InstagramPosts = () => {
       mediaUrl: "/assets/s4.jpg",
       likes: 2200,
       comments: 160,
-      caption: "Coffee time with friends ☕"
+      caption: "Experience the future of surgery ..... "
     }
   ];
 
-  // Main username and profile details
-  const mainUsername = "Dr. Yash Pandey"; // Change this to your desired username
-  const followers = "1.5K"; // Example follower count
-  const following = 120; // Example following count
+
+  const mainUsername = "Dr. Yash Pandey";
+  const followers = "1.5K";
+  const following = 120;
 
   return (
     <div className="container mx-auto p-4">
