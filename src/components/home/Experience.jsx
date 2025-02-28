@@ -7,7 +7,7 @@ const Experience = () => {
         <div className='md:my-[100px] mt-16'>
             <div className='flex md:flex-row flex-col justify-between md:mx-8 gap-8'>
 
-                <div className='md:w-[50%] flex flex-col gap-4 shadow-lg px-2 rounded-lg'>
+                <div className='md:w-[50%] flex flex-col gap-4 shadow-md px-2 rounded-lg'>
                     <div>
                         <img className='rounded-lg' src="/assets/hospital-banner.png" alt="" />
                     </div>
@@ -21,7 +21,7 @@ const Experience = () => {
 
                 <div className='grid gird-row-2 md:w-[50%] gap-5 p-1'>
                     <div className=' px-5 rounded-xl text-primary_dark gap-6 bg-[#d2f3ef] w-full'>
-                        <h1 className='pt-4 md:text-[34px] text-[30px] md:font-semibold leading-[44px]'>
+                        <h1 className='pt-4 md:text-[34px] text-[30px] md:font-semibold leading-[24px]'>
                             Senior Consultant
                         </h1>
                         <h2 className='text-[21px] font-semibold leading-[44px]'>

@@ -3,12 +3,12 @@ import React from 'react';
 
 const Specialization = () => {
     return (
-        <section id='service' className="flex flex-col items-center m-auto px-4 sm:px-8 lg:px-16 md:mb-[150px] mt-[70px] md:mt-[100px]  ">
-            <div className="mb-10">
-                <h1 className="md:text-2xl text-xl sm:text-3xl rounded-lg shadow-md shadow-gray-200 md:py-[20px] md:px-[40px]  font-bold text-head_primary lg:text-[50px] leading-[54px] text-center">
+        <section id='service' className="flex flex-col items-center m-auto px-4 sm:px-8 lg:px-16 md:mb-[150px] mt-[40px] md:mt-[100px]  ">
+            <div className="mb-2">
+                <h1 className="md:text-2xl text-xl sm:text-3xl rounded-lg shadow-md shadow-gray-200 md:py-[20px] md:px-[18px]  font-bold text-head_primary lg:text-[40px] leading-[44px] text-center">
                     DR. Yash Pandey
                 </h1>
-                <h3 className="text-2xl sm:text-3xl py-5 md:py-[20px] px-[40px] text-[32px]  font-bold text-primary_dark  lg:text-[50px] leading-[54px] text-center">
+                <h3 className="text-2xl sm:text-3xl py-5 md:py-[20px] px-[20px] text-[25px] font-bold text-primary_dark  lg:text-[40px] leading-[24px] text-center">
                     SPECIALIZATION
                 </h3>
             </div>
@@ -21,7 +21,7 @@ const Specialization = () => {
                             before:w-0 before:left-0 before:bg-head_primary before:content-['_'] before:bottom-0"
                     >
 
-                        <div className="w-16 h-16 bg-slate-500 rounded-full flex items-center justify-center text-white text-2xl">
+                        {/* <div className="w-16 h-16 bg-slate-500 rounded-full flex items-center justify-center text-white text-2xl">
                             {data.icon}
                         </div>
 
@@ -30,11 +30,11 @@ const Specialization = () => {
                             <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-primary_dark leading-snug">
                                 {data.title}
                             </h2>
-                        </div>
+                        </div> */}
 
 
-                        <div className="text-primary_dark text-sm sm:text-base">
-                            {data.content}
+                        <div className="text-primary_dark text-sm h-[200px] w-[100%] m-auto sm:text-base">
+                            <img src={data.img} alt="Loading.." className='h-full' />
                         </div>
                     </div>
                 ))}

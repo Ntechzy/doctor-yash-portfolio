@@ -2,6 +2,7 @@ export const SpecializationData = [
     {
         icon: "",
         title: "MINIMAL ACCESS SURGERY",
+        img:"/assets/ot1.png",
         content: (
             <ul className=" flex flex-col gap-4 text-primary_dark text-[16px]">
                 <li>Lap. Cholecystectomy</li>
@@ -14,6 +15,7 @@ export const SpecializationData = [
     {
         icon: "",
         title: "GILAPAROSCOPIC SURGERY",
+        img:"/assets/ot2.png",
         content: (
             <ul className=" flex flex-col gap-4 text-primary_dark text-[16px]">
                 <li>Lap. intestinal resection for infective / cancer etiology</li>
@@ -25,6 +27,7 @@ export const SpecializationData = [
     {
         icon: "",
         title: "BARIATRIC SURGERY",
+        img:"/assets/ot3.png",
         content: (
             <ul className=" flex flex-col gap-4 text-primary_dark text-[16px]">
                 <li>Laparoscopic Sleeve Gastrectomy</li>
@@ -36,6 +39,7 @@ export const SpecializationData = [
     {
         icon: "",
         title: "METABOLIC SURGERY FOR TYPE 2 DIABETES",
+        img:"/assets/ot5.png",
         content: (
             <p className="text-[16px] text-secondary">
                 Patients incapable of getting blood sugar under control through
