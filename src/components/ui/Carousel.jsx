@@ -57,15 +57,16 @@ const Carousel = () => {
           // }}
         >
           <div
-            className={`absolute inset-0 transition-all duration-500 ${
+            className={`absolute inset-0 transition-all duration-1000 ${
               isHovered ? "bg-gray-600 opacity-50" : "opacity-0"
             }`} 
             style={{
               transform: isHovered ? "scaleY(1)" : "scaleY(0)", 
               transformOrigin: "center",
+
             }}
           />
-          <img src={slide.image} alt="Loading..." />
+          <img src={slide.image} alt="Loading..." className=""/>
         </div>
       ))}
 

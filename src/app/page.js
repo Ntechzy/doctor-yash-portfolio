@@ -36,9 +36,9 @@ const page = () => {
       <InstagramPosts/>
       <Cta />
       <FAQ />
-      <AppoinmentForm />
       <Testimonials />
       {/* <Reviews /> */}
+      <AppoinmentForm />
       <BMICalculator />
       <Footer />
     </div>

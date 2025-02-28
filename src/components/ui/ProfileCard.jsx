@@ -20,16 +20,16 @@ const ProfileCard = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-[60%] flex flex-col gap-y-6 md:gap-y-14">
+      <div className="w-full md:w-[60%] flex flex-col gap-y-6 md:gap-y-14 -mt-2">
         <div>
-          <h1 className="text-[28px] sm:text-[32px] md:text-[40px] md:mt-[25px] lg:text-[50px] font-[600] leading-tight text-primary_dark">
+          <h1 className="text-[25px] sm:text-[32px] md:text-[40px] md:mt-[25px] lg:text-[50px] font-[600] leading-tight text-primary_dark">
             DR. Yash Pandey
           </h1>
-          <p className="text-secondary mt-4 md:mt-[15px] font-[600] text-[16px] sm:text-[18px] md:text-[20px]  pr-0 md:pr-[5rem]">
-            MBBS From Era’s Lucknow Medical college, Ram MAnohar Lohiya Avadh
-            University in 2014
-            <br /> M.S. From Krishna Institute of Medical Sciences Deemed University
-            in 2017.
+          <p className="text-secondary mt-4 md:mt-[15px] font-[500] text-[16px] sm:text-[18px] md:text-[20px]  pr-0 md:pr-[5rem]">
+          <li>MBBS From Era’s Lucknow Medical college, Ram MAnohar Lohiya Avadh
+          University in 2014</li>
+           <li>M.S. From Krishna Institute of Medical Sciences Deemed University
+           in 2017.</li>
           </p>
         </div>
 

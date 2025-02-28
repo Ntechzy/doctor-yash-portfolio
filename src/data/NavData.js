@@ -15,8 +15,5 @@ export const navData = [
         name: 'Contact',
         link: '/contact' // Uncommented and added link for Contact
     },
-    {
-        name: 'Book Appointment',
-        link: '/book-appointment' // Uncommented and added link for Contact
-    }
+   
 ]
