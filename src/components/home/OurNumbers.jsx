@@ -21,7 +21,7 @@ const OurNumber = () => {
                             <span className="md:text-4xl text-xl md:text-[70px] text-white font-bold">{stat.value}</span>
                             <span className='text-lg md:text-3xl'>{stat.symbol}</span>
                         </div>
-                        <span className="text-sm md:text-base mt-2 font-normal md:font-bold">{stat.label}</span>
+                        <span className="text-[12px] md:text-base mt-2 font-normal md:font-bold">{stat.label}</span>
                     </div>
                 ))}
             </div>

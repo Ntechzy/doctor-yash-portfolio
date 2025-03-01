@@ -65,12 +65,12 @@ export default function BMICalculator() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col justify-center bg-gray-50 px-4 sm:px-8 lg:px-16 w-full">
+    <div className="min-h-screen flex flex-col md:pt-1 pt-6 mb-5 justify-center bg-gray-50 px-4 sm:px-8 lg:px-16 w-full">
       <Heading title="BMI Calculator" />
       <div className="flex flex-col lg:flex-row gap-8 items-center">
         {/* BMI Form */}
-        <div className="bg-white shadow-lg rounded-lg w-full sm:w-11/12 lg:w-1/2">
-          <h2 className="text-2xl font-bold text-primary_dark mb-6 text-center ">
+        <div className="bg-white shadow-lg rounded-lg w-full sm:w-11/12 lg:w-1/2 p-6">
+          <h2 className="text-2xl font-bold text-primary_dark mb-6 text-center">
             Calculate Your BMI
           </h2>
           <div className="mb-4">
@@ -82,7 +82,7 @@ export default function BMICalculator() {
               className="block w-full px-4 py-4 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300 bg-[#e0ffff]"
             />
           </div>
-          <div className="flex gap-4 mb-4">
+          <div className="flex gap-4 mb-4 flex-wrap justify-center">
             <label className="flex items-center gap-2">
               <input
                 type="radio"
@@ -124,7 +124,7 @@ export default function BMICalculator() {
           </div>
           <button
             onClick={calculateBMI}
-            className="w-full bg-primary_dark text-white py-5 rounded-lg hover:bg-blue-700 transition"
+            className="w-full bg-primary_dark text-white py-5  rounded-lg hover:bg-blue-700 transition"
           >
             Calculate BMI
           </button>

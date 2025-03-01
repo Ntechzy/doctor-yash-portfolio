@@ -10,36 +10,41 @@ const AppointmentForm = () => {
 
   return (
     <section id="book-appointment" className="md:w-[90%] w-full flex md:flex-row flex-col py-[20px] md:py-[100px] items-start m-auto gap-1 md:gap-7">
-      <div className="relative w-full md:w-[90%] overflow-hidden md:p-0 p-[10px] bg-cover">
-        <img src="/assets/book.png" alt="Appointment" className="w-[70%] m-auto md:h-[465px] rounded h-[250px] bg-black" />
+      {/* Image Section */}
+      <div className="relative w-full md:w-[60%] overflow-hidden md:p-0 p-[10px] bg-cover">
+        <img 
+          src="/assets/book.png" 
+          alt="Appointment" 
+          className="w-full h-[250px] md:h-[465px] rounded object-cover" 
+        />
       </div>
-      <div className="w-full md:w-1/2 px-[15px] flex flex-col leading-[1.6] mt-1 md:md:p-0 p-[24px]">
+
+      {/* Form Section */}
+      <div className="w-full md:w-[40%] px-[15px] flex flex-col leading-[1.6] mt-4 md:mt-0">
         <h1 className="text-[#016163] font-bold text-2xl md:text-[44px] pb-4">Book Appointment</h1>
 
-        <form action="" className="mt-[20px] grid grid-cols-2 gap-3">
-
-          <div className="mb-[1rem] flex flex-col md:flex-row justify-between gap-3">
+        <form action="" className="mt-[20px] grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Full Name Input */}
+          <div className="mb-[1rem]">
             <input
-              className="h-[55px] w-full md:w-[100%] bg-[#f4f9fc] p-[.375rem_.75rem]"
+              className="h-[55px] w-full bg-[#f4f9fc] p-[.375rem_.75rem] rounded-md"
               type="text"
               placeholder="Full Name"
             />
-          
           </div>
 
-     
-          <div className="mb-[1rem] flex flex-col md:flex-row justify-between gap-3">
-        
+          {/* Appointment Date Input */}
+          <div className="mb-[1rem]">
             <input
-              className="h-[55px] w-full md:w-[100%] bg-[#f4f9fc] p-[.375rem_.75rem]"
+              className="h-[55px] w-full bg-[#f4f9fc] p-[.375rem_.75rem] rounded-md"
               type="text"
               placeholder="Appointment Date"
             />
           </div>
 
-      
-          <div className="mb-[1rem] flex flex-col md:flex-row justify-between gap-3">
-            <select className="h-[55px] w-full md:w-[100%] bg-[#f4f9fc] p-[.375rem_.75rem]" name="gender" id="gender">
+          {/* Gender Selection */}
+          <div className="mb-[1rem]">
+            <select className="h-[55px] w-full bg-[#f4f9fc] p-[.375rem_.75rem] rounded-md" name="gender" id="gender">
               <option value="">Please Select</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
@@ -48,42 +53,36 @@ const AppointmentForm = () => {
           </div>
 
           {/* Phone Number */}
-          <div className="mb-[1rem] flex flex-col md:flex-row justify-between gap-3">
+          <div className="mb-[1rem]">
             <input
-              className="h-[55px] w-full md:w-[100%] bg-[#f4f9fc] p-[.375rem_.75rem]"
+              className="h-[55px] w-full bg-[#f4f9fc] p-[.375rem_.75rem] rounded-md"
               type="tel"
-              placeholder="Your Phone Number "
+              placeholder="Your Phone Number"
             />
           </div>
 
-          {/* Address */}
-          <div className="mb-[1rem] flex flex-col">
+          {/* Address Input */}
+          <div className="mb-[1rem]">
             <input
-              className="h-[55px] w-full md:w-[100%] bg-[#f4f9fc] p-[.375rem_.75rem]"
+              className="h-[55px] w-full bg-[#f4f9fc] p-[.375rem_.75rem] rounded-md"
               type="text"
               placeholder="Your Address"
             />
           </div>
 
-    
-
-          
-         
-
-          {/* Message */}
-          <div>
+          {/* Message Textarea */}
+          <div className="mb-[1rem]">
             <textarea
               name=""
-              className="mb-4 w-full bg-[#f4f9fc] p-[.375rem_.75rem]"
+              className="w-full bg-[#f4f9fc] p-[.375rem_.75rem] rounded-md"
               rows={6}
               placeholder="Write a message"
-              id=""
             ></textarea>
           </div>
 
           {/* Submit Button */}
-          <div className="flex w-full m-auto">
-            <button className="bg-[#016163] hover:bg-[#016163b3] hover:bg-rose transition-[all_ease_.35s] font-semibold uppercase text-sm py-[12px] text-white px-[32px] rounded-full m-auto">
+          <div className="flex w-full">
+            <button className="bg-[#016163] hover:bg-[#016163b3] transition-all ease-[.35s] font-semibold uppercase text-sm py-[12px] text-white px-[32px] rounded-full w-full md:w-auto m-auto">
               Make Appointment
             </button>
           </div>

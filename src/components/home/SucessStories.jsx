@@ -37,7 +37,7 @@ const SucessStories = () => {
                 <div className=' '>
                     <div className='mb-[40px]'>
                         <div className='flex items-center gap-4'>
-                            <h1 className='text-[10px] md:text-[12px] font-bold uppercase mb-[20px] text-primary_dark '>
+                            <h1 className='text-[9px] md:text-[12px] font-bold uppercase mb-2 md:mb-[20px] text-primary_dark '>
                                 Success Stories
                             </h1>
                             <img className='mb-[20px]' src="/props/divider.png" alt="" />
@@ -50,7 +50,7 @@ const SucessStories = () => {
 
                     <div>
 
-                        <p className='text-[15px] md:text-[16px] text-gray-500 mb-[55px]'>
+                        <p className='text-[15px] md:text-[16px] text-gray-500 md:mt-0 -mt-3 mb-[50px]'>
                             Success lies in two things: Strategy and Execution. Without both, the results just won't show up where you need them.
                         </p>
                     </div>

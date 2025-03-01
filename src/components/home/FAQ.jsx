@@ -30,9 +30,9 @@ const FAQ = () => {
       <Heading title="Frequent asked questions" />
       <ul className="space-y-4">
         {faqData.map((faq, index) => (
-          <li key={index} className="border border-gray-300 rounded-lg overflow-hidden shadow-md">
+          <li key={index} className="border md:mt-0 mt-3 border-gray-300 rounded-lg overflow-hidden shadow-md">
             <button
-              className={`w-full text-left px-4 py-5  hover:bg-primary_dark hover:text-white font-medium  flex justify-between items-center ${activeIndex === index ? "bg-primary_dark text-white" : "text-primary_dark"} text-xl font-bold`}
+              className={`w-full text-left px-4 py-5   hover:bg-primary_dark hover:text-white font-medium  flex justify-between items-center ${activeIndex === index ? "bg-primary_dark text-white" : "text-primary_dark"} text-xl font-bold`}
               onClick={() => toggleFAQ(index)}
             >
               {faq.question}

@@ -57,7 +57,7 @@ const Carousel = () => {
           <img
             src={slide.image}
             alt="Loading..."
-            className="w-full h-full object-cover"
+            className="w-full h-full md:object-cover md:mt-5 object-contain"
           />
         </div>
       ))}

@@ -13,8 +13,8 @@ const Cta = () => {
                     "Your health is your wealth. Let’s take the first step towards better well-being together."
                 </p>
             </div>
-            <div>
-                <Link href="/book-appointment" className="mt-4 px-6 py-2 bg-primary_dark text-white rounded-md hover:bg-[#16ab97] md:text-3xl md:font-semibold transition duration-300">
+            <div className='md:mt-0 mt-3'>
+                <Link href="/book-appointment" className="mt-7 px-6 py-2 bg-primary_dark text-white rounded-md hover:bg-[#16ab97] md:text-3xl md:font-semibold transition duration-300">
                    Book Appointment
                 </Link>
             </div>

@@ -11,7 +11,7 @@ const InstagramPosts = () => {
       mediaUrl: "/assets/s1.jpg",
       likes: 2000,
       comments: 150,
-      caption: "Minimally invasive, maximum ....."
+      caption: "Minimally invasive, maximum .."
     },
     {
       id: "2",
@@ -20,7 +20,7 @@ const InstagramPosts = () => {
       mediaUrl: "/assets/s3.jpg",
       likes: 2500,
       comments: 180,
-      caption: "Make physical activity a part of ....."
+      caption: "Make physical activity a part o .."
     },
     {
       id: "3",
@@ -29,7 +29,7 @@ const InstagramPosts = () => {
       mediaUrl: "/assets/s2.jpg",
       likes: 1800,
       comments: 120,
-      caption: "Minimally invasive, maximum ....."
+      caption: "Minimally invasive, maximum .."
     },
     {
       id: "4",
@@ -38,33 +38,30 @@ const InstagramPosts = () => {
       mediaUrl: "/assets/s4.jpg",
       likes: 2200,
       comments: 160,
-      caption: "Experience the future of surgery ..... "
+      caption: "Experience the future of surger .. "
     }
   ];
-
 
   const mainUsername = "Dr. Yash Pandey";
   const followers = "1.5K";
   const following = 120;
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 rounded-md">
       {/* Profile Section */}
-      <div className="text-center shadow-lg border-t-2 items-center  flex flex-row justify-between ">
+      <div className="text-center shadow-lg border-t-2 items-center flex flex-col md:flex-row justify-between mb-8">
         {/* Profile Picture */}
-        <div className="mb-4 flex flex-row gap-3 ">
+        <div className="mb-4 md:ml-2 flex items-center justify-center  md:justify-start gap-3">
           <img
             src="/assets/s1.jpg" // Main profile picture for the username
             alt="Profile"
             className="w-14 h-14 rounded-full mx-auto"
           />
-          <div className='flex flex-col'>
+          <div className='flex flex-col md:pt-3'>
             <h2 className="text-lg font-md text-primary_dark mb-2 ">{mainUsername}</h2>
-            <h2 className="text-sm font-md text-primary_dark mb-2 text-start">yash_adsg</h2>
+            <h2 className="text-sm font-md text-primary_dark mb-2 text-start">dr.yash_pandey</h2>
           </div>
-
         </div>
-        {/* Username */}
 
         {/* Followers and Following */}
         <div className="flex justify-center gap-8 text-sm text-gray-600">
@@ -73,8 +70,8 @@ const InstagramPosts = () => {
             <span>Followers</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="font-semibold">{following}</span>
-            <span>Following</span>
+            <span className="font-semibold ">{following}</span>
+            <span className='md:pr-2 md:mx-2'>Following</span>
           </div>
         </div>
       </div>
@@ -92,8 +89,8 @@ const InstagramPosts = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <div className="text-center">
-                  <h1>{post.likes} Likes</h1>
-                  <p>{post.comments} Comments</p>
+                  <h1>{post.likes} <span className='font-bold'>♡</span></h1>
+                  <p>{post.comments}🗨️</p>
                 </div>
               </div>
             </div>

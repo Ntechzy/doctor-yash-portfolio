@@ -5,7 +5,7 @@ import { patientcare } from '@/data/PatientCare';
 const Patient = () => {
     return (
         <div className='bg-[#16ab9725] pt-[100px] md:pt-[180px] py-[20px] md:pb-[100px] mb-5 flex flex-col  gap-8'>
-            <div className='my-8 md:my-3'>
+            <div className='my-0 md:my-3'>
 
                 <Heading
                     title={"Award winning patient care"} />
