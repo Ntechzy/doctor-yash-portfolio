@@ -8,8 +8,7 @@ const Footer = () => {
             <img src="/logo.png" alt="Logo" className="h-10" /> {/* Replace with your logo */}
           </div>
           <p>
-            Dr. M.S.S. Mukharjee, an esteemed cardiologist in Hyderabad, boasts
-            extensive experience in interventional cardiology.
+          Dr. Yash Pandey underwent advanced training in Laparoscopic Bariatric & Metabolic Surgery at the prestigious Center of Excellence for Minimal Access Surgery in Mumbai in 2018. With his specialized expertise, he offers cutting-edge, minimally invasive solutions for effective weight management and metabolic health.
           </p>
           <div className="flex space-x-4 mt-4">
             {/* Social Media Links */}
