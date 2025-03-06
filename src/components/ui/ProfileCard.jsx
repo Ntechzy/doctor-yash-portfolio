@@ -23,7 +23,12 @@ const ProfileCard = () => {
       <div className="w-full md:w-[60%] flex flex-col gap-y-6 md:gap-y-14 -mt-2">
         <div>
           <h1 className="text-[25px] sm:text-[32px] md:text-[34px] md:mt-[35px] lg:text-[40px] font-[600] leading-tight text-primary_dark">
+            <p>
             DR. Yash Pandey
+            </p>
+            <p className="text-[10px] font-medium sm:text-[10px] md:text-[15px] mt-2">
+              MBBS MS FMAS FICS FIAGES
+            </p>
           </h1>
           <p className="text-secondary mt-4 md:mt-[15px] font-[500] text-[16px] sm:text-[18px] md:text-[20px]  pr-0 md:pr-[5rem]">
           <li>MBBS From Era’s Lucknow Medical college, Ram MAnohar Lohiya Avadh
@@ -41,7 +46,7 @@ const ProfileCard = () => {
             <b className="text-lg">Specialization - </b> General Surgery
           </p> */}
           <p className=" text-[14px] font-medium sm:text-[15px] md:text-[16px]">
-          <li>Laparoscopic Bariatric & Metabolic Surgery from Center of Excellence
+          <li>Laparoand Gastrointestinal Surgery from Center of Excellence
           for minimal access surgery Mumbai in 2018.</li>
        <li>Experience – More than 8 Yrs. • Specialization- General
        Surgery</li>

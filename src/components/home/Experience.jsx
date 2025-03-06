@@ -22,13 +22,13 @@ const Experience = () => {
                 <div className='grid gird-row-2 md:w-[50%] gap-5 p-1'>
                     <div className=' px-5 rounded-xl text-primary_dark gap-6 bg-[#d2f3ef] w-full'>
                         <h1 className='pt-4 md:text-[34px] text-[30px] md:font-semibold leading-[24px]'>
-                            Senior Consultant
+                        Laparoand Gastrointestinal Surgeon 
                         </h1>
                         <h2 className='text-[21px] font-semibold leading-[44px]'>
                             2018 - Present
                         </h2>
                         <p>
-                        Laparoscopic Bariatric & Metabolic Surgery from Center of Excellence for minimal access surgery Mumbai in 2018.
+                        Laparoand Gastrointestinal Surgery from Center of Excellence for minimal access surgery Mumbai in 2018.
                         </p>
                         <p className=' text-[18px] font-[600] mt-8 pb-4'>
                         SAS Hospital , Harahua , Varanasi UttarPradesh & Priya Hospital , Sigra , Varanasi UttarPradesh

@@ -35,9 +35,9 @@ const Features = () => {
           <div className="w-[250px] h-[320px] my-3 mx-1 p-2 border border-gray-400 shadow-lg">
             <img src="/assets/cf4.jpg" alt="" className="w-full h-full object-contain" />
           </div>
-          <div className="w-[250px] h-[320px] my-3 mx-1 p-2 border border-gray-400 shadow-lg">
+          {/* <div className="w-[250px] h-[320px] my-3 mx-1 p-2 border border-gray-400 shadow-lg">
             <img src="/assets/cf1.jpg" alt="" className="w-full h-full object-contain" />
-          </div>
+          </div> */}
           <div className="w-[250px] h-[320px] my-3 mx-1 p-2 border border-gray-400 shadow-lg">
             <img src="/assets/cf2.jpg" alt="" className="w-full h-full object-contain" />
           </div>

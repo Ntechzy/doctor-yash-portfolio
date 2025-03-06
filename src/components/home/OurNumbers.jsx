@@ -2,9 +2,9 @@ import React from 'react'
 
 const OurNumber = () => {
     const stats = [
-        { value: "3", symbol: " K+", label: "Happy People" },
-        { value: "1.5", symbol: " K+", label: "Surgery Completed" },
-        { value: "4", symbol: " +", label: "Year of Experience" },
+        { value: "10", symbol: " K+", label: "Happy People" },
+        { value: "10", symbol: " K+", label: "Surgery Completed" },
+        { value: "8", symbol: " +", label: "Year of Experience" },
         // { value: "20", symbol: "", label: "Worldwide Branch" },
     ];
 
