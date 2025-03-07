@@ -2,6 +2,7 @@ import { useState } from 'react';
 // import Button from './Button';
 import { SuccessStories } from '@/data/SliderData';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Slider = ({ interval = 5000 }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,11 +32,11 @@ const Slider = ({ interval = 5000 }) => {
                         style={{ backgroundImage: `url(${slide.image})`, transform: `translateX(${(index - currentSlide) * 100}%)`, objectFit: "cover" }}
                     >
                         <div
-                            className={'flex flex-col gap-4 absolute justify-center font-bold  px-10 bottom-0 text-center items-center w-full h-full transition-all delay-200 ease-in-out opacity-0 group-hover:opacity-100 bg-[#00000040] text-white m-auto'}
+                            className={'flex flex-col gap-4 absolute justify-center cursor-pointer underline font-bold  px-10 bottom-0 text-center items-center w-full h-full transition-all delay-200 ease-in-out opacity-0 group-hover:opacity-100 bg-[#00000040] text-white m-auto'}
                         >
-                            <div>
+                            <Link href={slide.link}>
                                 {slide.title}
-                            </div>
+                            </Link>
                             {/* <Button title={"Book Appoinment"} color={"bg-secondary"} hover={"hover:bg-primary"} /> */}
                         </div>
                     </div>
