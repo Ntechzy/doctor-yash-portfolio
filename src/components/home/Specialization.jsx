@@ -5,11 +5,11 @@ const Specialization = () => {
     return (
         <section id='service' className="flex flex-col items-center m-auto px-4 sm:px-8 lg:px-16 md:mb-[150px] mt-[40px] md:mt-[100px]  ">
             <div className="mb-2">
-                <h1 className="md:text-2xl text-xl sm:text-3xl rounded-lg shadow-md shadow-gray-200 md:py-[20px] md:px-[18px]  font-bold text-head_primary lg:text-[40px] leading-[44px] text-center">
+                {/* <h1 className="md:text-2xl text-xl sm:text-3xl rounded-lg  md:py-[20px] md:px-[18px]  font-bold text-primary lg:text-[40px] leading-[44px] text-center">
                     DR. Yash Pandey
-                </h1>
-                <h3 className="text-2xl sm:text-3xl py-5 md:py-[20px] px-[20px] text-[25px] font-bold text-primary_dark  lg:text-[40px] leading-[24px] text-center">
-                    SPECIALIZATION
+                </h1> */}
+                <h3 className="text-2xl sm:text-3xl py-5 md:py-[20px] px-[20px] text-[25px] font-bold text-primary  lg:text-[40px] leading-[24px] text-center">
+                   HIS SPECIALIZATION
                 </h3>
             </div>
 

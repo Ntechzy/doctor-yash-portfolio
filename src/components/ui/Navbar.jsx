@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 flex justify-between items-center px-4 lg:px-24 mb-10 text-lg w-full p-2 transition-all ease-in z-[999] bg-white`}
+        className={`sticky top-0 left-0 flex justify-between items-center px-4 lg:px-24  text-lg w-full p-2 transition-all ease-in z-[999] bg-white`}
         style={{ color: isScrolled ? "#000" : "var(--primary-color)" }}
       >
         <div className="h-[50px] flex items-center gap-4">
@@ -35,10 +35,11 @@ const Navbar = () => {
         <div className="hidden lg:flex flex-grow justify-center">
           <ul className="flex gap-5">
             {navData.map((data, key) => (
+              key != (navData.length-1) &&
               <li key={key}>
                 <button
                   onClick={() => scrollToSection(data.link.substring(1))}
-                  className="hover:bg-primary_dark text-primary_dark rounded-md hover:text-white p-1 transition-all"
+                  className="hover:underline text-primary_dark rounded-md p-1 transition-all"
                 >
                   {data.name}
                 </button>
@@ -47,10 +48,17 @@ const Navbar = () => {
           </ul>
         </div>
 
+        <button
+          onClick={() => scrollToSection("contact")}
+          className="bg-primary text-white rounded-full px-5 py-1 hidden xl:block "
+        >
+          Contact
+        </button>
+
         <div className="fixed top-[30%] -right-[4.5rem] -rotate-90 z-[9999]">
           <button
             onClick={() => setShowModal(true)}
-            className="bg-[#16ab97] text-white p-2 rounded-md hover:bg-primary-dark transition-all"
+            className="bg-primary text-white p-2 rounded-md hover:bg-primary-dark transition-all"
           >
             Book Appointment
           </button>

@@ -13,7 +13,7 @@ export const navData = [
     },
     {
         name: 'Contact',
-        link: '/contact' // Uncommented and added link for Contact
+        link: '/contact'
     },
    
 ]

@@ -35,7 +35,7 @@ const Carousel = () => {
   return (
     <section
       id="home"
-      className="md:mt-[45px] mt-[60px] relative w-full h-[200px] md:h-screen overflow-hidden"
+      className=" relative w-full h-[200px] md:h-screen overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -46,14 +46,14 @@ const Carousel = () => {
           className={`absolute inset-0 overflow-hidden transition-transform duration-700 bg-no-repeat bg-contain md:bg-cover ease-in-out w-full h-full ${index === currentIndex ? "translate-x-0" : "-translate-x-full"
             } ${index === currentIndex - 1 ? "translate-x-full" : ""}`}
         >
-          <div
+          {/* <div
             className={`absolute inset-0 transition-all duration-500 ${isHovered ? "bg-gray-600 opacity-50" : "opacity-0"
               }`}
             style={{
               transform: isHovered ? "scaleY(1)" : "scaleY(0)",
               transformOrigin: "center",
             }}
-          />
+          /> */}
           <img
             src={slide.image}
             alt="Loading..."

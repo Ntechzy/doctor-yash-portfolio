@@ -13,22 +13,24 @@ import Specialization from "@/components/home/Specialization"
 import SucessStories from "@/components/home/SucessStories"
 import Carousel from "@/components/ui/Carousel"
 import Cta from "@/components/ui/Cta"
+import FloatingShare from "@/components/ui/FloatingShare"
 import Footer from "@/components/ui/Footer"
 import Navbar from "@/components/ui/Navbar"
 import ProfileCard from "@/components/ui/ProfileCard"
 import Testimonials from "@/components/ui/Testimonials"
+import TopBar from "@/components/ui/TopBar"
 
 
 const page = () => {
   return (
     <div>
-
+      <TopBar/>
       <Navbar />
       <Carousel />
       <ProfileCard />
       <OurNumber />
       <Patient />
-      <Experience />
+      {/* <Experience /> */}
       <Specialization />
       <Features/>
       <SucessStories />
@@ -40,6 +42,7 @@ const page = () => {
       <AppoinmentForm />
       <BMICalculator />
       <Footer />
+      <FloatingShare/>
     </div>
   )
 }
